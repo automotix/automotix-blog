@@ -1,0 +1,29 @@
+{
+  "name": "automotix-blog",
+  "description": "WP theme for blog.automotix.net",
+  "type":"wordpress-theme",
+  "minimum-stability" : "stable",
+  "authors": [
+      {
+          "name": "John Paul Giago",
+          "email": "jgiago@gmail.com"
+      }
+  ],
+  "extra": {
+  	"installer-paths": {
+      "../../plugins/{$name}/": [
+        "wpackagist-plugin/*",
+        "type:wordpress-plugin"
+      ]
+  	}
+	},
+  "require": {
+	  "wpackagist-plugin/timber-library": "0.22.*"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ]
+}
